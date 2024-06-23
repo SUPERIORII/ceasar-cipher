@@ -198,7 +198,7 @@ transition: .5s ease-out;
 
 @media (max-width:1536px) {
     .container {
-        width: 1280px;
+        width: 768px;
     }
 
     .text-area,#key, .result {
