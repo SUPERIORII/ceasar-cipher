@@ -17,8 +17,9 @@ body {
     width: 1536px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: .5rem;
-    padding-right: .5rem;
+   padding-left:.5rem ;
+   padding-right:.5rem ;
+    border: 1px solid red;
 }
 
 .general-container {
@@ -33,11 +34,10 @@ body {
     height: 80vh;
     box-shadow: 0px 0px 30px 5px rgb(87, 86, 86);
     color: white;
-    padding-left: 2.7rem;
-    padding-right: 2.7rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    
     margin-top: 50px;
+    display: flex;
+    
 
     display: none;
 }
@@ -50,7 +50,9 @@ body {
 
 .text-area-des {
     font-size: 18px;
-    margin-left: 20px;
+    margin-left: 35px;
+    
+    width: 600px;
 }
 
 .wrapper {
@@ -60,8 +62,7 @@ body {
 }
 
 .text-area {
-    width: 600px;
-    height: 70px;
+
     font-size: 20px;
     padding: .5rem;
     margin-bottom: 10px;
@@ -208,7 +209,7 @@ transition: .5s ease-out;
 
 @media (max-width:1280px) {
     .container {
-        width: 1024px;
+        width: 768px;
     }
 
     .text-area, #key, .result {
@@ -218,17 +219,21 @@ transition: .5s ease-out;
 
 @media (max-width:1024px) {
     .container {
-        width: 768px;
+        width: 570px;
     }
 
     .text-area,#key, .result {
-        width: 400px;
+        width: 500px;
     }
 }
 
 @media (max-width:768px) {
     .container {
-        width: 640px;
+        width: 400px;
+    }
+
+    .text-area-des {
+        width: 360px;
     }
 
     .text-area,#key, .result {
@@ -242,15 +247,16 @@ transition: .5s ease-out;
 
 @media (max-width:640px) {
     .container {
-        width: 475px;
+        width: 300px;
     }
 
     .text-area,#key, .result {
-        width: 200px;
+        width: 260px;
     }
 
     .text-area-des {
-        font-size: 12px;
+        width: 230px;
+        font-size: 15px;
     }
 
     .cipher-heading {
