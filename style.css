@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(1, 1, 16); 
+}
+
+.container {
+    width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.general-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.general-wrapper {
+    background-color: rgb(2, 2, 27);
+    width: 50vw;
+    height: 100vh;
+    box-shadow: 0px 0px 30px 5px rgb(87, 86, 86);
+    color: white;
+    padding-left: 2.7rem;
+    padding-right: 2.7rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    display: none;
+}
+
+.cipher-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.text-area-des {
+    font-size: 18px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-area {
+    width: 600px;
+    height: 70px;
+    font-size: 20px;
+    padding: .5rem;
+    margin-bottom: 10px;
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.encript-btn, .decript-btn {
+font-size: 18px;
+padding: .5rem;
+background: white;
+color: rgb(7, 97, 7);
+border: none;
+margin-right: 10px;
+border-radius: 10px;
+font-weight: bold;
+transition: .5s ease-out;
+}
+
+.encript-btn:hover, .decript-btn:hover {
+    background: rgb(7, 97, 7);
+    color: #ffffff;
+}
+
+#key {
+    padding: .5rem;
+    width: 600px;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.result-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.result {
+    width: 600px;
+    height: 50px;
+}
+
+.shifted-value-wrapper {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shift {
+    margin-left: 10px;
+}
+
+.welcome-message-wrapper {
+    color: white;
+    background: rgba(0,0,0, 0.9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.welcome-message {
+    font-size: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+.welcome-message span {
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color:transparent;
+}
+
+.welcome-message span::after {
+    content: 'Hawa Kromah';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 12%;
+    background-image: linear-gradient(to right, #ff6f61, #6b5b95, #feb236);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.picture-wrapper {
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.continue-btn {
+    font-size: 20px;
+    padding: .5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(7, 97, 7);
+    color: white;
+    font-weight: bold;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.continue-btn:hover {
+    color: rgb(7, 97, 7);
+    background: white;
+}
+
+@media (max-width:1536px) {
+    .container {
+        width: 1280px;
+    }
+
+    .text-area,#key, .result {
+        width: 600px;
+    }
+}
+
+@media (max-width:1280px) {
+    .container {
+        width: 1024px;
+    }
+
+    .text-area, #key, .result {
+        width: 500px;
+    }
+}
+
+@media (max-width:1024px) {
+    .container {
+        width: 768px;
+    }
+
+    .text-area,#key, .result {
+        width: 400px;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 640px;
+    }
+
+    .text-area,#key, .result {
+        width: 300px;
+    }
+
+    .cipher-heading {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:640px) {
+    .container {
+        width: 475px;
+    }
+
+    .text-area,#key, .result {
+        width: 200px;
+    }
+
+    .text-area-des {
+        font-size: 12px;
+    }
+
+    .cipher-heading {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:475px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
